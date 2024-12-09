@@ -2,9 +2,10 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import gradio as gr
 
-model_id = "MaxBlumenfeld/smollm2-135m-bootleg-instruct"
+model_id = "./model"  # Point to the local folder
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(model_id)
+
 
 def generate_response(message, temperature=0.7, max_length=200):
    prompt = f"Human: {message}\nAssistant:"
