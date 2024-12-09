@@ -1,3 +1,4 @@
+---
 title: SmolLM2 Bootleg Instruct Demo
 emoji: 🤖
 colorFrom: blue
@@ -9,3 +10,4 @@ pinned: false
 python_version: 3.10
 suggested_hardware: cpu-basic
 startup_duration_timeout: 300
+---
