@@ -2,12 +2,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import gradio as gr
 
-# model_id = "MaxBlumenfeld/smollm2-135m-bootleg-instruct"
-# tokenizer = AutoTokenizer.from_pretrained(model_id)
-# model = AutoModelForCausalLM.from_pretrained(model_id)
-
-model_id = "./model"  # Local folder where the model is stored
-
+model_id = "MaxBlumenfeld/smollm2-135m-bootleg-instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(model_id)
 
